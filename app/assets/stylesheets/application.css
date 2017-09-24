@@ -13,12 +13,6 @@
  *= require_tree .
  *= require_self
  */
-body {
-  background-image: url(main_background.jpg);
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-}
 
 ul {
     list-style-type: none;
