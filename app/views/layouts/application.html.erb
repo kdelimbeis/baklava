@@ -14,14 +14,22 @@
     <% if user_signed_in? %>
       Logged in as <strong><%= current_user.email %></strong>.
       <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_index_path %></li>
+      <li><%= link_to "Menu", '/menus/1/categories' %></li>
+      <li><%= link_to "Breaksfast", '/menus/2/categories' %></li>
+      <li><%= link_to "Catering", '/menus/3/categories' %></li>
       <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
-      <li><%= link_to "About", about_index_path %></li>
+
     <% else %>
       <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_index_path %></li>
+      <li><%= link_to "Menu", '/menus/1/categories' %></li>
+      <li><%= link_to "Breaksfast", '/menus/2/categories' %></li>
+      <li><%= link_to "Catering", '/menus/3/categories' %></li>
       <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
       <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
-      <li><%= link_to "About", about_index_path %></li>
+
     <% end %>
     </p>
   </ul>

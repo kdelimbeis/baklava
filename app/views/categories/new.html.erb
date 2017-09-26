@@ -1,0 +1,16 @@
+<h1>Categories#new</h1>
+<p>Find me in app/views/categories/new.html.erb</p>
+
+
+<%= form_with(model: [ @menu, @menu.categories.build ]) do |form| %>
+
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>

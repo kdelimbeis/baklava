@@ -1,0 +1,10 @@
+<h1>Items#index</h1>
+<p>Find me in app/views/items/index.html.erb</p>
+
+
+<% @items.each do |i| %>
+      <p><%= i.name %></p>
+      <p><%= i.description %></p>
+      <p><%= i.price %></p>
+
+<% end %>
