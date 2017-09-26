@@ -3,6 +3,6 @@
 
 
 <% @categories.each do |c| %>
-      <p><%= link_to c.name, menu_category_items_path  %></p>
+      <p><%= link_to c.name, menu_category_items_path(c.menu_id, c.id)  %></p>
 
 <% end %>
